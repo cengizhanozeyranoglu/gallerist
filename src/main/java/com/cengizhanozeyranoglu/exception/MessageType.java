@@ -8,7 +8,10 @@ import lombok.NoArgsConstructor;
 @Getter
 public enum MessageType {
     NO_RECORD_EXIST("1004", "kayt bulunamadı"),
-    GENERAL_EXCEPTION("9999", "genel bir hata oluştu");
+    GENERAL_EXCEPTION("9999", "genel bir hata oluştu"),
+    CUSTOMER_AMOUNT_IS_NOT_ENOUGH("1001","müşterinin parası yeterli değildir"),
+    CAR_STATUS_TYPE_IS_NOT_AVAILABLE("1002","araba satın almak için uygun değil");
+
 
     private String code;
 
